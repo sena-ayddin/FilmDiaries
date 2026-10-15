@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* sayfanın genel stili */
+body {
+    font-family: "Lexend", sans-serif;
+    color: #F5F0E8;
+    background-color: #1A1A1A;
+}
+
+/* nav bar ------------------------------------------------------------------------------ */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #558121;
+}
+
+nav .logo {
+}
+
+nav .search{
+    width:max-content;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 28px;
+    background-color: rgba(245, 240, 232,0.5);
+    height: 40px;
+}
+
+nav .search-input{
+    font-size: 12px;
+    font-family:'Lexend', sans-serif;
+    border:none;
+    background: transparent;
+    width: 400px;
+}
+
+nav .search-input::placeholder,
+nav .search-icon{
+    color: #F5F0E8;
+}
+
+/*nav linkleri */
+nav .link {
+    display: flex;
+    gap: 32px;
+}
+
+nav .link-text {
+    text-decoration: none;
+}
+
+nav .link-text:hover {
+    color: #812154;
+}
+nav .profile{
+    padding: 10px;
+}
+nav .profile-icon{
+    font-size: 32px;
+}
