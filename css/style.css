@@ -16,6 +16,10 @@ nav {
     display: flex;
     justify-content: space-between;
     background-color: #558121;
+    position: sticky; /* sayfa kaydırılınca nav üstte kalmaya devam etsin */
+    top: 0;
+    border-bottom: 1px solid #252B24;
+    z-index: 100; /* diğer elemanların üstünde dursun diye en üst katman */
 }
 
 nav .logo {
@@ -62,4 +66,29 @@ nav .profile{
 }
 nav .profile-icon{
     font-size: 32px;
+}
+
+/* reklam ------------------------------------------------------------------------------ */
+
+.reklam{
+    background-image: url('../images/reklam.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 500px;
+}
+
+.reklam-movie{
+    mix-blend-mode: difference;
+    color: #ffffff;
+    width: 500px;
+}
+.movie-info{
+    display: flex;
+    justify-content: space-between;
+}
+.reklam-purchase-options{
+    display: flex;
+    justify-content: space-between;
 }
