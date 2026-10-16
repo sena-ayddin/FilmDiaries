@@ -23,8 +23,13 @@ nav {
 }
 
 nav .logo {
+   font-family: "Michroma", sans-serif;
+   position:sticky;
+   color: #F5F0E8;
+   margin: auto;
+   width: 50%;
+   padding: 10px;
 }
-
 nav .search{
     width:max-content;
     display: flex;
@@ -36,6 +41,7 @@ nav .search{
 }
 
 nav .search-input{
+    
     font-size: 12px;
     font-family:'Lexend', sans-serif;
     border:none;
@@ -87,6 +93,7 @@ nav .profile-icon{
 .movie-info{
     display: flex;
     justify-content: space-between;
+    font-family: "Anton", sans-serif;
 }
 .reklam-purchase-options{
     display: flex;
