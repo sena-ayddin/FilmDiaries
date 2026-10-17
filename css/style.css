@@ -98,19 +98,61 @@ nav .profile-icon{
     display: flex;
     justify-content: space-between;
 }
-/* keep watching ------------------------------------------------------------------------------ */
-.scroll{
-    padding-top: 37px;
-    height: 1620px;
+/* main ------------------------------------------------------------------------------ */
+
+main{
+    height: 1520px;
 }
-.scroll-tiles.swiper{
-    padding: 0 4%;
-    height: 280px;
-    margin: auto;
+main p{
+    font-size: 20px;
+    font-weight: lighter;
+    margin-top: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+
 }
-.tile{
-    width: 220px;
+.wrapper{
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    overflow-x: auto;
+    margin-top: 17px;
+    gap: 33px;
 }
-.tile-img{
+.wrapper::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
+.wrapper-item{
+    line-height: 0px;
+    width: auto !important;
+}
+.item1-img{
     width: 280px;
+    height: 220px;
+    object-fit: cover;
+}
+.item2-img{
+    width: 220px;
+    height: 280px;
+    object-fit: cover;
+}
+main h6{
+    font-size: 30px;
+    font-weight: lighter;
+    margin-top: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+
+}
+.item3-img{
+    width: 400px;
+    height: 314px;
+    object-fit: cover;
+}
+/* footer ------------------------------------------------------------------------------ */
+
+footer{
+    background-color: #558121;
+    height: 80px;
 }
