@@ -17,21 +17,35 @@ body {
 nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: #558121;
     position: sticky; /* sayfa kaydırılınca nav üstte kalmaya devam etsin */
     top: 0;
     border-bottom: 1px solid #252B24;
     z-index: 100; /* diğer elemanların üstünde dursun diye en üst katman */
-    max-height: 100px;
+    height: 100px;
+    padding: 0 25px;
+    box-sizing: border-box;
     width: 100%;
+}
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 65px; 
+}
+.nav-right {
+    align-items: center;
+    gap: 35px;
+    display: flex;
 }
 
 nav .logo {
     font-family: "Michroma", sans-serif;
     color: #F5F0E8;
-    margin: auto;
-    width: 50%;
+    font-size: 24px;
+    white-space: nowrap;
     padding: 10px;
+    text-decoration: none;
 }
 nav .search{
     width:max-content;
@@ -40,7 +54,8 @@ nav .search{
     border-radius: 28px;
     background-color: rgba(245, 240, 232,0.5);
     height: 40px;
-    margin: 30px;
+    align-items: center;
+    box-sizing: border-box;
 }
 
 nav .search-input{
@@ -57,6 +72,15 @@ nav .search-icon{
 }
 
 /*nav linkleri */
+
+.nav-links{
+    display: flex;
+    margin-right: 30px;
+    width: 400px;
+    margin: auto;   
+    gap: 50px;
+}
+
 nav .link {
     font: size 20px;
     font-family:'Lexend', sans-serif;
@@ -64,7 +88,6 @@ nav .link {
     background: transparent;
     width: 400px;
     display: flex;
-    gap: 24px;
     margin: auto;
 }
 

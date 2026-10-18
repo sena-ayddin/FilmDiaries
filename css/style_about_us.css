@@ -1,14 +1,48 @@
-.about-us h1{
+h1.anabaslik{
     text-align: center;
     font-size: 64px;
     font-weight: normal;
+    height: 280px;
+    padding-top: 100px;
 }
 .sections{
     width: 100%;
     color: inherit;
     height: 500px;
-    background-color: blueviolet;
     margin-bottom: 25px;
+}
+.section1{
+    background-image: url('../images/bg1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.section2{
+    background-image: url('../images/bg2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    padding-bottom: 40px;
+}
+.section3{
+    background-image: url('../images/bg3.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    padding-bottom: 40px;
 }
 .left-side{
     width: 50%;
@@ -17,6 +51,7 @@
     margin-left: 40px;
 }
 .left-side h1{
+    font-weight: normal;
     text-align: left;
     font-size: 48px;
 }
@@ -28,6 +63,7 @@
 
 }
 .right-side h1{
+    font-weight: normal;
     text-align: right;
     font-size: 48px;
 
