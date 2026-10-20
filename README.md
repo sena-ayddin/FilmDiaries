@@ -6,6 +6,11 @@ This project was built as part of the **COM5005 Web Programming** course project
 
 ---
 
+## 🌐 Live Site
+https://sena-ayddin.github.io/FilmDiaries/index.html
+
+---
+
 ## 📌 Project Overview
 
 - **Course:** COM5005 - Web Programming
