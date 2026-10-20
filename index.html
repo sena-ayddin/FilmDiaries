@@ -35,7 +35,7 @@
                 <!-- Açılır Menü (Popup) -->
                 <div class="profile-popup" id="profilePopup">
                     <div class="popup-header">
-                        <span class="popup-title">My Profile</span>
+                        <a class="popup-title" href="profile.html">My Profile</a>
                         <span class="header-icon material-symbols-outlined">account_circle</span>
                     </div>
                     <div class="popup-divider"></div>
@@ -165,21 +165,7 @@
             </div>
     </main>
 </body>
-<script>
-    const profileBtn = document.querySelector('nav .profile');
-    const profilePopup = document.getElementById('profilePopup');
-
-    profileBtn.addEventListener('click', (e) => {
-        if (e.target.closest('.profile-popup')) return;
-        profilePopup.classList.toggle('active');
-    });
-
-    document.addEventListener('click', (e) => {
-        if (!profileBtn.contains(e.target)) {
-            profilePopup.classList.remove('active');
-        }
-    });
-</script>
+<script src="js/index.js"></script>
 <footer>
     <p>© 2026 COM5005 GROUP 16</p>
 </footer>

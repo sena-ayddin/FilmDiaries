@@ -155,8 +155,12 @@ nav .profile:hover{
 }
 
 .popup-title {
+    text-decoration: none;
     font-size: 14px;
     font-weight: 500;
+}
+.popup-title:hover{
+    color: #812154;
 }
 
 .header-icon {
