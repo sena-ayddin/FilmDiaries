@@ -97,6 +97,11 @@ h1.anabaslik{
 }
 .pp.material-symbols-outlined{
     font-size: 120px;
+    text-decoration: none;
+    color: #F5F0E8;
+}
+.pp.material-symbols-outlined:hover{
+    color: #812154;
 }
 .name{
     font-size: 20px;
