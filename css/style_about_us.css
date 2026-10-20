@@ -1,3 +1,5 @@
+/* about us ------------------------------------------------------------------------------ */
+
 h1.anabaslik{
     text-align: center;
     font-size: 64px;
@@ -68,7 +70,40 @@ h1.anabaslik{
     font-size: 48px;
 
 }
-
+/* the team ------------------------------------------------------------------------------ */
+.the-team h1{
+    text-align: center;
+    font-size: 64px;
+    font-weight: normal;
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
 .team-cards{
     display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+.character{
+    height: 240px;
+    width: 240px;
+    border-radius: 30px;
+    background-color: #252B24;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pp.material-symbols-outlined{
+    font-size: 120px;
+}
+.name{
+    font-size: 20px;
+    margin-top: 20px;
+}
+.role{
+    font-size: 20px;
+    margin-top: 0px;
+    opacity: 50%;
 }

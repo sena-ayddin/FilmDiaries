@@ -128,16 +128,25 @@ nav .profile-icon{
     background-position: center;
     background-repeat: no-repeat;
     height: 500px;
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
 }
-.movie-info h1{
+.reklam-movie h1{
     font-size: 80px;
     font-family: "Anton",sans-serif;
     text-align: center;
+    font-weight: normal;
+    line-height: 80px;
+    margin-top: 5px;
 }
-.movie-info h6{
+.reklam-movie h6{
     font-family: "Antonio",sans-serif;
     font-size: 20px;
     text-align: center;
+    font-weight: normal;
+    margin-top: 40px;
+
 }
 .movie-info p{
     font-family: "Antonio",sans-serif;
@@ -147,6 +156,7 @@ nav .profile-icon{
     mix-blend-mode: difference;
     color: #ffffff;
     width: 500px;
+    margin-left: 90px;
 }
 .movie-info{
     display: flex;
@@ -154,52 +164,56 @@ nav .profile-icon{
     font-family: "Anton", sans-serif;
 }
 .reklam-purchase-options{
+    margin-top: 25px;
     display: flex;
     gap: 20px   ;
     justify-content: left;
-    
+    margin-left: 90px;
 }
 .reklam-one-time{
     background-color: #D9D9D9;
-    border-radius: 20%;
+    border-radius: 20px;
     height:80px ; 
     width:232px ; 
     display: flex;
     flex-direction: column;
-    justify-content: center;  
     text-align: left;
+    justify-content: space-evenly;  
 }
-.reklam-one-time h6, .h7 {
-    font-family: "Lexend",sans-serif;
-    font-size: 10px;
-    color: #1A1A1A;
-}
-.reklam-one-time p{
-    font-family: "Lexend",sans-serif;
-    font-size: 8px;
-    color: #1A1A1A;
-}
-
 .reklam-join{
     background-color: #D9D9D9;
-    border-radius: 20%;
+    border-radius: 20px;
     height:80px ; 
     width:232px ; 
     display: flex;
     flex-direction: column;
-    justify-content: center;  
     text-align: left;
+    justify-content: space-evenly;  
 }
-.reklam-join h6,.h7 {
+.reklam-purchase-options h6{
+    font-family: "Lexend",sans-serif;
+    font-size: 15px;
+    color: #1A1A1A;
+    margin-left: 10px;
+
+}
+.reklam-purchase-options h7{
+    font-family: "Lexend",sans-serif;
+    font-size: 12px;
+    color: #1A1A1A;
+    margin-left: 10px;
+
+}
+.reklam-purchase-options p{
     font-family: "Lexend",sans-serif;
     font-size: 10px;
     color: #1A1A1A;
+    opacity: 50%;
+    margin-left: 10px;
+
 }
-.reklam-join p{
-    font-family: "Lexend",sans-serif;
-    font-size: 8px;
-    color: #1A1A1A;
-}
+
+
 
 
 /* main ------------------------------------------------------------------------------ */
@@ -236,11 +250,14 @@ main p{
     width: 280px;
     height: 220px;
     object-fit: cover;
+    border-radius: 15px;
 }
 .item2-img{
     width: 220px;
     height: 280px;
     object-fit: cover;
+    border-radius: 15px;
+
 }
 main h6{
     font-size: 30px;
@@ -254,10 +271,19 @@ main h6{
     width: 400px;
     height: 314px;
     object-fit: cover;
+    border-radius: 15px;
+
 }
 /* footer ------------------------------------------------------------------------------ */
 
 footer{
     background-color: #558121;
     height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+footer p{
+    text-align: center;
+    font-size: 13px;
 }
