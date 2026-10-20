@@ -33,6 +33,18 @@
         </div>
         <div class="profile">
             <span class="profile-icon material-symbols-outlined">account_circle</span>
+            <!-- Açılır Menü (Popup) -->
+            <div class="profile-popup" id="profilePopup">
+                <div class="popup-header">
+                    <span class="popup-title">My Profile</span>
+                    <span class="header-icon material-symbols-outlined">account_circle</span>
+                </div>
+                <div class="popup-divider"></div>
+                <ul class="popup-menu">
+                    <li><a href="my_list.html">My List</a></li>
+                    <li><a href="history.html">Watch History</a></li>
+                    <li><a href="settings.html">Settings</a></li>
+                </ul>
         </div>
         </div>
     </nav>
@@ -153,6 +165,21 @@
             </div>
     </main>
 </body>
+<script>
+    const profileBtn = document.querySelector('nav .profile');
+    const profilePopup = document.getElementById('profilePopup');
+
+    profileBtn.addEventListener('click', (e) => {
+        if (e.target.closest('.profile-popup')) return;
+        profilePopup.classList.toggle('active');
+    });
+
+    document.addEventListener('click', (e) => {
+        if (!profileBtn.contains(e.target)) {
+            profilePopup.classList.remove('active');
+        }
+    });
+</script>
 <footer>
     <p>© 2026 COM5005 GROUP 16</p>
 </footer>
