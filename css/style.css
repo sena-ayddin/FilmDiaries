@@ -47,6 +47,9 @@ nav .logo {
     padding: 10px;
     text-decoration: none;
 }
+nav .logo:hover{
+    color: #812154;
+}
 nav .search{
     width:max-content;
     display: flex;
@@ -113,11 +116,14 @@ nav .profile{
     padding: 10px;
     margin: auto;
 }
-nav .profile-icon{
+nav .profile-icon.material-symbols-outlined{
     border:none;
     background: transparent;
     font-size: 32px;
     margin: auto;
+}
+nav .profile:hover{
+    color: #812154;
 }
 
 /* reklam ------------------------------------------------------------------------------ */
