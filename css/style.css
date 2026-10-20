@@ -115,6 +115,8 @@ nav .profile{
     background: transparent;
     padding: 10px;
     margin: auto;
+    position: relative;
+    cursor: pointer;
 }
 nav .profile-icon.material-symbols-outlined{
     border:none;
@@ -126,13 +128,6 @@ nav .profile:hover{
     color: #812154;
 }
 
-/* Profil alanına konumlandırma desteği */
-nav .profile {
-    position: relative;
-    cursor: pointer;
-}
-
-/* Açılır Menü (Popup) */
 .profile-popup {
     display: none;
     position: absolute;
@@ -364,4 +359,26 @@ footer{
 footer p{
     text-align: center;
     font-size: 13px;
+}
+
+/* back button ------------------------------------------------------------------------------ */
+
+.back-btn {
+    display: inline-block;
+    margin-left: 100px;
+    margin-bottom: 80px;
+    border: 2px solid #558121;
+    color: #558121;
+    padding: 12px 28px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+
+/* çerçeveli butona hover */
+.back-btn:hover {
+    background: #558121;
+    color: #ffffff;
 }
