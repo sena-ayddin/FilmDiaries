@@ -380,10 +380,30 @@ footer p{
     font-size: 14px;
     transition: all 0.3s;
 }
-
-
 /* çerçeveli butona hover */
 .back-btn:hover {
     background: #558121;
     color: #ffffff;
+}
+
+/* scroll animation ------------------------------------------------------------------------------ */
+
+/* --- YUMUŞAK KAYDIRMA (SMOOTH SCROLL) --- */
+html {
+    scroll-behavior: smooth;
+}
+
+/* --- YUKARI KAYARAK BELİRME ANİMASYONU --- */
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(45px);
+    transition: opacity 0.75s cubic-bezier(0.2, 0.8, 0.2, 1), 
+                transform 0.75s cubic-bezier(0.2, 0.8, 0.2, 1);
+    will-change: opacity, transform;
+}
+
+/* Ekrana girdiği anda JS tarafından eklenir */
+.scroll-reveal.active {
+    opacity: 1;
+    transform: translateY(0);
 }
