@@ -194,9 +194,7 @@
         display: none;
     }
 }
-.profile {
-    position: relative;
-}
+
 
 .profile-popup {
     display: none;
@@ -245,19 +243,7 @@
 .profile-popup a:hover {
     color: #7ED321;
 }
-.profile .profile-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background: #252B24;
-    color: #3A4A36;
-    font-size: 36px;
-    font-variation-settings: "FILL" 1;
-    cursor: pointer;
-}
+
 .contact-form {
     box-sizing: border-box;
     width: min(100%, 1090px);
