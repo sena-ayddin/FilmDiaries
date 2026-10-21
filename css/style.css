@@ -305,8 +305,9 @@ main p{
     margin-top: 50px;
     margin-left: 40px;
     margin-right: 40px;
-
-
+}
+main p strong {
+    font-weight: 700;
 }
 .wrapper{
     margin-left: 40px;
