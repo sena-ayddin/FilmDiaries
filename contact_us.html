@@ -26,10 +26,10 @@
         </div>
         <div class="nav-right">
             <div class="nav-links">
-            <a href="movies.html" class="link-text">movies</a>
-            <a href="series.html" class="link-text">series</a>
-            <a href="about_us.html" class="link-text">about_us</a>
-            <a href="contact_us.html" class="link-text">contact_us</a>
+             <a href="movies.html" class="link-text">movies</a>
+             <a href="series.html" class="link-text">series</a>
+             <a href="about_us.html" class="link-text">about us</a>
+             <a href="contact_us.html" class="link-text">contact us</a>
             </div>
             <div class="profile">
                 <span class="profile-icon material-symbols-outlined">person</span>
@@ -49,75 +49,93 @@
             </div>
         </div>
     </nav>
-<main class="contact-page">
+ <main class="contact-page">
     <h1>How can we help you?</h1>
     
-    <section class="faq-section">
-        <div class="faq-item">
+  <section class="faq-section">
+    <details class="faq-item">
+        <summary>
             <span class="faq-title">Account & Profile</span>
             <span class="faq-desc">Account access, password reset, profile settings, account deletion.</span>
-        </div>
-        
-        <div class="faq-item">
+        </summary>
+        <p class="faq-answer">This part is for Account and Profile.</p>
+    </details>
+
+    <details class="faq-item">
+        <summary>
             <span class="faq-title">Streaming & Playback</span>
             <span class="faq-desc">Video playback errors, music playback, buffering, subtitles and audio issues.</span>
-        </div>
-        
-        <div class="faq-item">
+        </summary>
+        <p class="faq-answer">This part is for Streaming and Playback.</p>
+    </details>
+
+    <details class="faq-item">
+        <summary>
             <span class="faq-title">Store & Purchases</span>
             <span class="faq-desc">Purchases, rentals, payment problems, refunds and order history.</span>
-        </div>
-        
-        <div class="faq-item">
+        </summary>
+        <p class="faq-answer">This part is for Store and Purchases.</p>
+    </details>
+
+    <details class="faq-item">
+        <summary>
             <span class="faq-title">Subscription & Billing</span>
             <span class="faq-desc">Subscription plans, billing errors, cancellations and payment methods.</span>
-        </div>
-        
-        <div class="faq-item">
+        </summary>
+        <p class="faq-answer">This part is for Subscription and Billing.</p>
+    </details>
+
+    <details class="faq-item">
+        <summary>
             <span class="faq-title">Feedback & Suggestions</span>
             <span class="faq-desc">Feature requests, recommendations and ideas to improve the platform.</span>
-        </div>
-        
-        <div class="faq-item">
+        </summary>
+        <p class="faq-answer">This part is for Feedback and Suggestions.</p>
+    </details>
+
+    <details class="faq-item">
+        <summary>
             <span class="faq-title">Privacy & Security</span>
             <span class="faq-desc">Privacy concerns, suspicious activity, data requests and security issues.</span>
-        </div>
-    </section>
+        </summary>
+        <p class="faq-answer">This part is for Privacy and Security.</p>
+    </details>
+</section>
 
     <h2>Can't find what you need? Contact us</h2>
     
-    <form id="contactForm" class="contact-form">
-        <div class="form-group">
-            <label for="name">Your name</label>
-            <input type="text" id="name" placeholder="Your name" required>
-        </div>
+<form id="contactForm" class="contact-form">
+    <div class="form-group">
+        <label for="name">Your name</label>
+        <input type="text" id="name">
+    </div>
 
-        <div class="form-group">
-            <div class="form-group-label">
-                <label for="email">Username or email</label>
-                <span class="mandatory">*mandatory</span>
-            </div>
-            <input type="email" id="email" placeholder="name@example.com" required>
+    <div class="form-group">
+        <div class="form-group-label">
+            <label for="email">Username or email</label>
         </div>
+        <input type="email" id="email" required>
+        <span class="mandatory">*mandatory</span>
+    </div>
 
-        <div class="form-group">
-            <label for="topic">Topic</label>
-            <input type="text" id="topic" placeholder="What is your message about?">
+    <div class="form-group">
+        <label for="topic">Topic</label>
+        <input type="text" id="topic">
+    </div>
+
+    <div class="form-group">
+        <div class="form-group-label">
+            <label for="message">Message</label>
         </div>
-
-        <div class="form-group">
-            <div class="form-group-label">
-                <label for="message">Message</label>
-                <span class="mandatory">*mandatory</span>
-            </div>
-            <div class="textarea-wrapper">
-                <textarea id="message" placeholder="Write your message..."></textarea>
-                <span class="char-count">0/2000</span>
-            </div>
+        <div class="textarea-wrapper">
+            <textarea id="message"></textarea>
+            <span class="char-count">0/2000</span>
         </div>
+        <span class="mandatory">*mandatory</span>
+    </div>
 
-        <button type="submit">Send message</button>
-    </form>
+    <button type="submit">Send message</button>
+</form>
 </main>
     <a href="index.html" class="back-btn">← Back to Home Page</a>
 </body>
