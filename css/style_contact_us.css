@@ -245,18 +245,9 @@
 .profile-popup a:hover {
     color: #7ED321;
 }
-.profile .profile-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background: #252B24;
-    color: #3A4A36;
-    font-size: 36px;
-    font-variation-settings: "FILL" 1;
-    cursor: pointer;
+nav .profile .profile-icon.material-symbols-outlined {
+    color: #FFFFFF !important;
+    background: transparent !important;
 }
 .contact-form {
     box-sizing: border-box;
@@ -452,4 +443,30 @@
 .nav-links a,
 .nav-links .link-text {
     white-space: nowrap;
+}
+.profile .profile-icon,
+.profile .header-icon,
+.search-icon,
+.faq-item summary::after {
+    color: #FFFFFF !important;
+}
+.profile .profile-icon,
+.profile .header-icon,
+.search-icon,
+.faq-item summary::after {
+    color: #FFFFFF !important;
+}
+
+.profile .profile-icon {
+    background: none !important;
+}
+nav .profile .profile-icon,
+nav .profile span.material-symbols-outlined,
+nav .search-icon {
+    color: #FFFFFF !important;
+    background: transparent !important;
+    opacity: 1 !important;
+}
+profile-icon {
+    color: red !important;
 }
