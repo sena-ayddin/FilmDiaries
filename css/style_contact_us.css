@@ -194,9 +194,7 @@
         display: none;
     }
 }
-.profile {
-    position: relative;
-}
+
 
 .profile-popup {
     display: none;
@@ -245,10 +243,7 @@
 .profile-popup a:hover {
     color: #7ED321;
 }
-nav .profile .profile-icon.material-symbols-outlined {
-    color: #FFFFFF !important;
-    background: transparent !important;
-}
+
 .contact-form {
     box-sizing: border-box;
     width: min(100%, 1090px);
@@ -443,30 +438,4 @@ nav .profile .profile-icon.material-symbols-outlined {
 .nav-links a,
 .nav-links .link-text {
     white-space: nowrap;
-}
-.profile .profile-icon,
-.profile .header-icon,
-.search-icon,
-.faq-item summary::after {
-    color: #FFFFFF !important;
-}
-.profile .profile-icon,
-.profile .header-icon,
-.search-icon,
-.faq-item summary::after {
-    color: #FFFFFF !important;
-}
-
-.profile .profile-icon {
-    background: none !important;
-}
-nav .profile .profile-icon,
-nav .profile span.material-symbols-outlined,
-nav .search-icon {
-    color: #FFFFFF !important;
-    background: transparent !important;
-    opacity: 1 !important;
-}
-profile-icon {
-    color: red !important;
 }
