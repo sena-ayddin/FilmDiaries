@@ -1,19 +1,24 @@
 .contact-page {
-    color: #F5F0E8;
+    background: #1E1E1E;
+    color: #f5f5ed;
     min-height: 75vh;
     padding: 45px 20px;
     text-align: center;
     font-family: "Instrument Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
 
 .contact-page h1 {
     margin: 0 0 35px;
-    font-size: 30px;
+    font-size: 32px;
+    font-weight: 600;
 }
 
 .faq-section,
 .contact-form {
-    width: min(100%, 650px);
+    width: min(100%, 1220px);
     margin: 0 auto;
 }
 
@@ -24,36 +29,67 @@
 }
 
 .faq-item {
-    background: #527b57;
-    border-radius: 18px;
-    padding: 16px 20px;
+    display: grid;
+    grid-template-columns: 260px 1fr auto;
+    align-items: center;
+    gap: 30px;
+    background: #252B24;
+    border-radius: 40px;
+    padding: 22px 36px;
     text-align: left;
 }
 
-.faq-item summary {
-    cursor: pointer;
-    font-weight: 600;
+.faq-title {
+    font-family: "Lexend", sans-serif;
+    font-size: 13.5px;
+    font-weight: 300;
+    color: #F5F0E8;
+    letter-spacing: -0.2px;
 }
 
-.faq-item p {
-    line-height: 1.6;
-    margin: 14px 0 0;
+.faq-desc {
+    font-family: "Lexend", sans-serif;
+    font-size: 11.5px;
+    font-weight: 300;
+    color: #c9d0c6;
+    line-height: 1.4;
+}
+
+.faq-item::after {
+    content: "+";
+    font-size: 18px;
+    color: #F5F0E8;
+    font-weight: 300;
+    justify-self: end;
 }
 
 .contact-page h2 {
-    font-size: 22px;
+    font-family: "Lexend", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    color: #F5F0E8;
     margin-bottom: 18px;
+    text-align: center;
 }
 
+/* İletişim Formu Ana Kutusu */
 .contact-form {
     box-sizing: border-box;
-    background: #315b3a;
+    background: #252B24;
     border-radius: 18px;
-    padding: 22px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
-    gap: 9px;
+    gap: 10px;
     text-align: left;
+}
+
+/* Etiketler ve Mandatory Alanı */
+.form-group-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
 .contact-form label {
@@ -61,6 +97,13 @@
     font-weight: 600;
 }
 
+.mandatory {
+    font-size: 11px;
+    color: #ff6b81;
+    font-weight: 500;
+}
+
+/* Input ve Textarea Kutuları (Figma'daki #D9D9D9 rengi) */
 .contact-form input,
 .contact-form textarea {
     box-sizing: border-box;
@@ -69,31 +112,51 @@
     border-radius: 6px;
     padding: 12px;
     font: inherit;
-    background: #f0f1e7;
+    background: #D9D9D9;
     color: #222;
+}
+
+.textarea-wrapper {
+    position: relative;
+    width: 100%;
 }
 
 .contact-form textarea {
     min-height: 130px;
     resize: vertical;
+    padding-bottom: 25px;
 }
 
+.char-count {
+    position: absolute;
+    bottom: 8px;
+    right: 12px;
+    font-size: 11px;
+    color: #888;
+    pointer-events: none;
+}
+
+/* Send Message Butonu (Figma Ölçüleri ve Rengiyle Birebir) */
 .contact-form button {
     align-self: center;
-    width: min(100%, 240px);
-    margin-top: 8px;
+    width: min(100%, 623px);
+    height: 70px;
+    margin-top: 12px;
     border: 0;
-    border-radius: 20px;
-    padding: 12px;
-    background: #39e600;
-    color: #fff;
-    font-size: 15px;
-    font-weight: 700;
+    border-radius: 25px;
+    background: #558121;
+    color: #FFFFFF;
+    font-family: "Lexend", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .contact-form button:hover {
-    background: #2ec500;
+    background: #466c1b;
 }
 
 .form-feedback {
@@ -109,16 +172,76 @@
     color: #d4ffd4;
 }
 
-@media (max-width: 600px) {
-    .contact-page {
-        padding: 30px 14px;
+@media (max-width: 900px) {
+    .faq-item {
+        grid-template-columns: 1fr;
+        gap: 8px;
     }
+    .faq-item::after {
+        display: none;
+    }
+}
+.profile {
+    position: relative;
+}
 
-    .contact-page h1 {
-        font-size: 25px;
-    }
+.profile-popup {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    min-width: 200px;
+    padding: 16px;
+    background: #252B24;
+    border-radius: 16px;
+    z-index: 100;
+}
 
-    .contact-form {
-        padding: 16px;
-    }
+.profile:hover .profile-popup {
+    display: block;
+}
+
+.popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popup-divider {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 10px 0;
+}
+
+.popup-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.popup-menu li {
+    padding: 6px 0;
+}
+
+.profile-popup a {
+    color: #F5F0E8;
+    text-decoration: none;
+    font-family: "Lexend", sans-serif;
+}
+
+.profile-popup a:hover {
+    color: #7ED321;
+}
+.profile .profile-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #252B24;
+    color: #3A4A36;
+    font-size: 36px;
+    font-variation-settings: "FILL" 1;
+    cursor: pointer;
 }
