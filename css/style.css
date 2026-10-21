@@ -198,10 +198,10 @@ nav .profile:hover{
     text-decoration: underline;
 }
 
-/* reklam ------------------------------------------------------------------------------ */
+/* sponsor ------------------------------------------------------------------------------ */
 
-.reklam{
-    background-image: url('../images/reklam.jpg');
+.sponsor{
+    background-image: url('../images/sponsor.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -210,7 +210,7 @@ nav .profile:hover{
     flex-direction: column;  
     justify-content: center;
 }
-.reklam-movie h1{
+.sponsor-movie h1{
     font-size: 80px;
     font-family: "Anton",sans-serif;
     text-align: center;
@@ -218,7 +218,7 @@ nav .profile:hover{
     line-height: 80px;
     margin-top: 5px;
 }
-.reklam-movie h6{
+.sponsor-movie h6{
     font-family: "Antonio",sans-serif;
     font-size: 20px;
     text-align: center;
@@ -230,7 +230,7 @@ nav .profile:hover{
     font-family: "Antonio",sans-serif;
     font-size: 20px;
 }
-.reklam-movie{
+.sponsor-movie{
     mix-blend-mode: difference;
     color: #ffffff;
     width: 500px;
@@ -241,14 +241,14 @@ nav .profile:hover{
     justify-content: space-between;
     font-family: "Anton", sans-serif;
 }
-.reklam-purchase-options{
+.sponsor-purchase-options{
     margin-top: 25px;
     display: flex;
     gap: 20px   ;
     justify-content: left;
     margin-left: 90px;
 }
-.reklam-one-time{
+.sponsor-one-time{
     background-color: #D9D9D9;
     border-radius: 20px;
     height:80px ; 
@@ -258,7 +258,7 @@ nav .profile:hover{
     text-align: left;
     justify-content: space-evenly;  
 }
-.reklam-join{
+.sponsor-join{
     background-color: #D9D9D9;
     border-radius: 20px;
     height:80px ; 
@@ -268,21 +268,21 @@ nav .profile:hover{
     text-align: left;
     justify-content: space-evenly;  
 }
-.reklam-purchase-options h6{
+.sponsor-purchase-options h6{
     font-family: "Lexend",sans-serif;
     font-size: 15px;
     color: #1A1A1A;
     margin-left: 10px;
 
 }
-.reklam-purchase-options h7{
+.sponsor-purchase-options h7{
     font-family: "Lexend",sans-serif;
     font-size: 12px;
     color: #1A1A1A;
     margin-left: 10px;
 
 }
-.reklam-purchase-options p{
+.sponsor-purchase-options p{
     font-family: "Lexend",sans-serif;
     font-size: 10px;
     color: #1A1A1A;

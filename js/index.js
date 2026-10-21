@@ -17,7 +17,7 @@ document.addEventListener('click', (e) => {
 document.addEventListener("DOMContentLoaded", () => {
     // Yukarı kaymasını istediğimiz alanları otomatik seçiyoruz
     const animTargets = document.querySelectorAll(
-        '.reklam, main p, main h6, .wrapper, .sections, .the-team, .faq-section, .contact-form, .team-cards, .character'
+        '.sponsor, main p, main h6, .wrapper, .sections, .the-team, .faq-section, .contact-form, .team-cards, .character'
     );
 
     // Hepsine başlangıç sınıfını veriyoruz
