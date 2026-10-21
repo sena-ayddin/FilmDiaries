@@ -10,6 +10,9 @@ body {
     background-color: #1A1A1A;
     width: 100%;
     overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
 
 /* nav bar ------------------------------------------------------------------------------ */

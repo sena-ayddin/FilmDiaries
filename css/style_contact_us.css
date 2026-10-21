@@ -4,7 +4,6 @@
     min-height: 75vh;
     padding: 45px 20px;
     text-align: center;
-    font-family: "Instrument Sans", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
@@ -193,55 +192,6 @@
     .faq-item::after {
         display: none;
     }
-}
-
-
-.profile-popup {
-    display: none;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    min-width: 200px;
-    padding: 16px;
-    background: #252B24;
-    border-radius: 16px;
-    z-index: 100;
-}
-
-.profile:hover .profile-popup {
-    display: block;
-}
-
-.popup-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.popup-divider {
-    height: 1px;
-    background: rgba(255, 255, 255, 0.2);
-    margin: 10px 0;
-}
-
-.popup-menu {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.popup-menu li {
-    padding: 6px 0;
-}
-
-.profile-popup a {
-    color: #F5F0E8;
-    text-decoration: none;
-    font-family: "Lexend", sans-serif;
-}
-
-.profile-popup a:hover {
-    color: #7ED321;
 }
 
 .contact-form {
