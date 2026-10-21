@@ -26,13 +26,13 @@
         </div>
         <div class="nav-right">
             <div class="nav-links">
-                <a href="movies.html" class="link-text">movies</a>
-                <a href="series.html" class="link-text">series</a>
-                <a href="about_us.html" class="link-text">about_us</a>
-                <a href="contact_us.html" class="link-text">contact_us</a> 
+             <a href="movies.html" class="link-text">movies</a>
+             <a href="series.html" class="link-text">series</a>
+             <a href="about_us.html" class="link-text">about us</a>
+             <a href="contact_us.html" class="link-text">contact us</a>
             </div>
             <div class="profile">
-                <span class="profile-icon material-symbols-outlined">account_circle</span>
+                <span class="profile-icon material-symbols-outlined">person</span>
                 <!-- Açılır Menü (Popup) -->
                 <div class="profile-popup" id="profilePopup">
                     <div class="popup-header">
@@ -49,98 +49,74 @@
             </div>
         </div>
     </nav>
-    <main class="contact-page">
-
+ <main class="contact-page">
     <h1>How can we help you?</h1>
-
+    
     <section class="faq-section">
-
-        <details class="faq-item">
-
-            <summary>Account &amp; Profile</summary>
-
-            <p>Get help with account access, password resets and profile settings.</p>
-
-        </details>
-
-        <details class="faq-item">
-
-            <summary>Streaming &amp; Playback</summary>
-
-            <p>Find help with playback errors, buffering, subtitles and audio issues.</p>
-
-        </details>
-
-        <details class="faq-item">
-
-            <summary>Store &amp; Purchases</summary>
-
-            <p>Get help with purchases, rentals, payments and order history.</p>
-
-        </details>
-
-        <details class="faq-item">
-
-            <summary>Subscription &amp; Billing</summary>
-
-            <p>Learn about subscription plans, billing and cancellations.</p>
-
-        </details>
-
-        <details class="faq-item">
-
-            <summary>Feedback &amp; Suggestions</summary>
-
-            <p>Share ideas and suggestions to improve FilmDiaries.</p>
-
-        </details>
-
-        <details class="faq-item">
-
-            <summary>Privacy &amp; Security</summary>
-
-            <p>Get help with privacy concerns and account security.</p>
-
-        </details>
-
+        <div class="faq-item">
+            <span class="faq-title">Account & Profile</span>
+            <span class="faq-desc">Account access, password reset, profile settings, account deletion.</span>
+        </div>
+        
+        <div class="faq-item">
+            <span class="faq-title">Streaming & Playback</span>
+            <span class="faq-desc">Video playback errors, music playback, buffering, subtitles and audio issues.</span>
+        </div>
+        
+        <div class="faq-item">
+            <span class="faq-title">Store & Purchases</span>
+            <span class="faq-desc">Purchases, rentals, payment problems, refunds and order history.</span>
+        </div>
+        
+        <div class="faq-item">
+            <span class="faq-title">Subscription & Billing</span>
+            <span class="faq-desc">Subscription plans, billing errors, cancellations and payment methods.</span>
+        </div>
+        
+        <div class="faq-item">
+            <span class="faq-title">Feedback & Suggestions</span>
+            <span class="faq-desc">Feature requests, recommendations and ideas to improve the platform.</span>
+        </div>
+        
+        <div class="faq-item">
+            <span class="faq-title">Privacy & Security</span>
+            <span class="faq-desc">Privacy concerns, suspicious activity, data requests and security issues.</span>
+        </div>
     </section>
 
     <h2>Can't find what you need? Contact us</h2>
+    
+    <form id="contactForm" class="contact-form">
+        <div class="form-group">
+            <label for="name">Your name</label>
+            <input type="text" id="name" placeholder="Your name" required>
+        </div>
 
-    <form id="contactForm" class="contact-form" novalidate>
+        <div class="form-group">
+            <div class="form-group-label">
+                <label for="email">Username or email</label>
+                <span class="mandatory">*mandatory</span>
+            </div>
+            <input type="email" id="email" placeholder="name@example.com" required>
+        </div>
 
-        <label for="name">Your name</label>
+        <div class="form-group">
+            <label for="topic">Topic</label>
+            <input type="text" id="topic" placeholder="What is your message about?">
+        </div>
 
-        <input id="name" name="name" type="text"
-
-               placeholder="Your name" required>
-
-        <label for="email">Username or email</label>
-
-        <input id="email" name="email" type="email"
-
-               placeholder="name@example.com" required>
-
-        <label for="topic">Topic</label>
-
-        <input id="topic" name="topic" type="text"
-
-               placeholder="What is your message about?" required>
-
-        <label for="message">Message</label>
-
-        <textarea id="message" name="message"
-
-                  placeholder="Write your message..." maxlength="1000"
-
-                  required></textarea>
-
-        <p id="formFeedback" class="form-feedback"
-
-           role="status" aria-live="polite"></p>
+        <div class="form-group">
+            <div class="form-group-label">
+                <label for="message">Message</label>
+                <span class="mandatory">*mandatory</span>
+            </div>
+            <div class="textarea-wrapper">
+                <textarea id="message" placeholder="Write your message..."></textarea>
+                <span class="char-count">0/2000</span>
+            </div>
+        </div>
 
         <button type="submit">Send message</button>
-
     </form>
 </main>
     <a href="index.html" class="back-btn">← Back to Home Page</a>
