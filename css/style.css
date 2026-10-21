@@ -127,6 +127,10 @@ nav .profile-icon.material-symbols-outlined{
 nav .profile:hover{
     color: #812154;
 }
+.nav-links a,
+.nav-links .link-text {
+    white-space: nowrap;
+}
 
 .profile-popup {
     display: none;
